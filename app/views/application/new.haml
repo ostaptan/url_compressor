@@ -1,0 +1,8 @@
+%h4 Add a new url
+
+%div
+  = form_for @url, url: {action: :create} do |form|
+    = form.text_field :generic_url
+    = form.submit 'Compress'
+
+

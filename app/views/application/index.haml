@@ -1,0 +1,9 @@
+%h4 List of saved urls
+
+%ul
+  - @urls.each do |url|
+    %li
+      = link_to url.link_to_display, handle_url_path(url.alias)
+
+%div
+  = button_to 'add one more url', new_url_store_path, method: 'get'
