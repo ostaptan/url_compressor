@@ -8,14 +8,12 @@
 
 1. Clone a project `git@github.com:Ostap256/url_compressor.git`
 2. cd .../url_compressor
-⋅⋅* `bundle install`
-3. rails s
+3. `bundle install`
+4. rails s
 
 ***
 
-## Descriptions:
+## Description:
 
 > Url provided to compress simply converts to 6-symbols alias. After pasting compressed url into a browser it automatically redirects to a original url.
 > Every following and creating of url is logged.
-
----
