@@ -9,7 +9,8 @@
 1. Clone a project `git@github.com:Ostap256/url_compressor.git`
 2. cd .../url_compressor
 3. `bundle install`
-4. rails s
+4. `rake db:migrate`
+4. `rails s`
 
 ***
 

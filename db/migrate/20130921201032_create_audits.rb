@@ -1,9 +1,14 @@
 class CreateAudits < ActiveRecord::Migration
   def up
-    add_column :audits, :url_id, :integer 
-    add_column :audits, :remote_ip, :string
+    create_table :audits do |t|
+      t.integer :url_id
+      t.string :remote_ip
+    
+      t.timestamps
+    end
   end
   
   def down
+    drop_table :audits
   end
 end
